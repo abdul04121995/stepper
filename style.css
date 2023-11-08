@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #191919;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  width: 85%;
+  margin-inline: auto;
+  border: 2px solid mediumturquoise;
+  height: 500px;
+  /* position: relative; */
+}
+h1 {
+  text-align: center;
+}
+p {
+  padding-block: 0.7rem;
+}
+button {
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+}
+.card {
+  /* position: absolute; */
+  width: 80%;
+  height: 350px;
+  border: 2px solid white;
+  padding: 1rem;
+  display: none;
+}
+.card.displaying {
+  display: block;
+  animation: shower 0.5s ease-in-out;
+}
+@keyframes shower {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
